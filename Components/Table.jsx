@@ -11,7 +11,7 @@ export default ({ setCreateShipmentModel, allShipmentsdata})=>{
 };
 console.log(allShipmentsdata);
 return( 
-<div className="border-4 border-black rounded-xl max-w-screen-xl mx-auto px md:px-8">
+<div className="border-4 border-black rounded-xl w-fit mx-auto px-4 md:px-8">
   <div className=" items-start justify-between md:flex">
     <div className=" max-w-lg">
       <h3 className=" text-greay-800 text-xl font-bold sm:text-2xl">
@@ -35,6 +35,7 @@ return(
     <table className=" w-full table-auto text-sm text-left">
       <thead className=" bg-gray-50 text-gray-600 font-medium border-b">
         <tr>
+          <th className="px-6 py-3">#</th>
           <th className="px-6 py-3">Sender</th>
           <th className="px-6 py-3">Receiver</th>
           <th className="px-6 py-3">PickupTime</th>
@@ -48,6 +49,7 @@ return(
       <tbody className=" text-gray-600 divide-y">
       {allShipmentsdata?.map((shipment, idx)=>(
         <tr key={idx} >
+          <td className="px-6 py-3 whitespace-nowrap">{idx}</td>
           <td className="px-6 py-3 whitespace-nowrap">
             {shipment.sender}
           </td>

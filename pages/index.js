@@ -57,7 +57,7 @@ const index=() =>{
         <Table
         setCreateShipmentModel={setCreateShipmentModel}
         allShipmentsdata={allShipmentsdata}
-       
+        refreshShipments={refreshShipments}
         />
         <Form
         createShipmentModel={createShipmentModel}

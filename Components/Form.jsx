@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-
+import { ethers } from "ethers"; 
 export default ({
   setCreateShipmentModel,
   createShipmentModel,
   createShipment,
+  refreshShipments,
 }) => {
   const [shipment, setShipment] = useState({
     receiver: "",
@@ -14,7 +15,13 @@ export default ({
 
   const createItem = async () => {
     try {
+
+  if (!ethers.utils.isAddress(shipment.receiver.trim())) {
+    alert("Receiver must be a valid Ethereum address.");
+    return;
+  }
       await createShipment(shipment);
+      await refreshShipments();
       setCreateShipmentModel(false);
       setShipment({ receiver: "", pickupTime: "", distance: "", price: "" });
     } catch (error) {

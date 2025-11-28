@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Str1 } from "../Components/index";
-export default ({ startModal, setStartModal, startShipment }) => {
+export default ({ startModal, setStartModal, startShipment, refreshShipments }) => {
   const [getProduct, setGetProduct] = useState({
     receiver: "",
     index: ""
@@ -9,8 +9,11 @@ export default ({ startModal, setStartModal, startShipment }) => {
   const startShipping = async () => {
     try {
       await startShipment(getProduct);
-      setStartModal(false);                      // close modal
-      setGetProduct({ receiver: "", index: "" }); // reset fields
+      if (typeof refreshShipments === "function") {
+        await refreshShipments();
+      }
+      setStartModal(false);
+      setGetProduct({ receiver: "", index: "" });
     } catch (err) {
       console.log("Error starting shipment", err);
     }

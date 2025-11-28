@@ -50,11 +50,11 @@ export default ({
     <section className=" py-0 pb-0">
       <div id="bg" className=" max-w-screen-xl mx-auto px-4 md:px-8 border-4 border-black rounded-xl mb-5 py-3">
         <div className="mt-0">
-          <ul className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <ul className="flex flex-row flex-wrap md:flex-nowrap gap-6">
             {team.map((item, i) => (
-              <li key={i}>
+              <li key={i} className="flex-1 min-w-[220px]">
                 <div  onClick={() => openModalBox(i+1)}
-                className="  w-full h-60 sm:h-52 md:h-56">
+                className="w-full h-60 sm:h-52 md:h-56">
                   <Image
                     src={item.avatar}
                     className="w-full h-full object-cover object-center shadow-md rounded-xl   hover:border-transparent hover:border-4 cursor-pointer"
