@@ -49,8 +49,8 @@ MetaMask (wallet) ──> Next.js UI ──> ethers.js/web3modal ──> Hardhat
 ## Installation & Setup
 1. **Clone repository**
    ```bash
-   git clone https://github.com/ThisIsSahaj/SupplyChainManagement.git
-   cd SupplyChainManagement
+   gh repo clone tde13/SupplyChainManagement-main
+   cd SupplyChainManagement-main
    ```
 2. **Install dependencies**
    ```bash
@@ -126,6 +126,9 @@ NEXT_PUBLIC_NETWORK_RPC=http://127.0.0.1:8545/
 6. **Shipment Table**
    - Columns: Serial #, Sender, Receiver, Pickup Time, Distance, Price (ETH), Delivery Time, Paid, Status.
    - Full addresses displayed; horizontal scroll available for narrow screens.
+  
+   - <img width="1780" height="1166" alt="image" src="https://github.com/user-attachments/assets/83ee0707-53aa-4197-877d-15094dcd875f" />
+
 
 ---
 
