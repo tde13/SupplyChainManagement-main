@@ -204,7 +204,8 @@ MetaMask approval prompt:
 
 Reflected in UI:
 
-<img width="1781" height="1126" src="https://github.com/user-attachments/assets/ce1f7d5e-4e36-4f09-b64b-0b5fc58a8fb9" />
+<img width="1781" height="1126" alt="hhh" src="https://github.com/user-attachments/assets/8a9ad143-5541-4105-91f6-b38998557d7f" />
+
 
 ---
 
@@ -224,7 +225,8 @@ MetaMask approval:
 
 Updated UI:
 
-<img width="1823" height="1097" src="https://github.com/user-attachments/assets/fc047bcf-bbad-4272-b846-3207203cfd06" />
+<img width="1823" height="1097" alt="iiii" src="https://github.com/user-attachments/assets/359c3724-1487-4f83-80cf-74a3058d0966" />
+
 
 ---
 
@@ -240,7 +242,8 @@ Screenshots:
 
 <img width="2960" height="1774" src="https://github.com/user-attachments/assets/b8fd4c2e-17c9-4408-a793-deb7147fea84" />
 
-<img width="1849" height="1049" src="https://github.com/user-attachments/assets/05b50c1e-57f8-4b24-a774-e8e30050f118" />
+<img width="1849" height="1049" alt="jjjj" src="https://github.com/user-attachments/assets/c5f2a909-3e86-4415-8860-69dad170c575" />
+
 
 ---
 
