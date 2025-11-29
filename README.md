@@ -1,4 +1,4 @@
-# Blockchain Supply Chain Management DApp
+# Blockchain Shipment Management Tracking System
 
 This document provides a detailed guide to setting up, running, and demonstrating the blockchain-based supply-chain tracking DApp included in this repository. The application uses a Solidity smart contract, a Hardhat development environment, and a Next.js interface to manage shipment lifecycles (create → start → complete) with full on-chain transparency.
 
